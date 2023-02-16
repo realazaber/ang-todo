@@ -6,6 +6,11 @@
     <h1 class="text-center">AngTodo</h1>
   </div>
   <div class="w-[33%] text-right">
-    <button (click)="toggleMode()">{{ toggletext }}</button>
+    <button
+      class="border rounded-md p-2 bg-slate-100 dark:bg-darkbg border-black dark:border-white"
+      (click)="toggleMode()"
+    >
+      {{ toggletext }}
+    </button>
   </div>
 </header>
