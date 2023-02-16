@@ -16,13 +16,13 @@ export class HeaderComponent implements OnInit {
     this.darkMode = !this.darkMode;
 
     if (this.darkMode) {
-      this.toggletext = "Dark Mode";
-    }
-    else {
       this.toggletext = "Light Mode";
     }
+    else {
+      this.toggletext = "Dark Mode";
+    }
 
-    alert("Toggle mode\n" + this.darkMode + "\n" + this.toggletext);
+    document.documentElement.classList.toggle("dark");
   }
 
   constructor() { 
