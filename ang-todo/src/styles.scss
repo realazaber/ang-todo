@@ -14,7 +14,11 @@
     }
 
 
-    body, button {
+    body {
         @apply bg-slate-100 dark:bg-darkbg;
+    }
+
+    input, textarea {
+        @apply text-black dark:text-slate-100 dark:border dark:border-white dark:rounded;
     }
 }
