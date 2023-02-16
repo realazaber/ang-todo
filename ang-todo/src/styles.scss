@@ -2,3 +2,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    * {
+        @apply font-sans font-medium text-slate-900 dark:text-slate-100 duration-300;
+    }
+
+    body {
+        @apply bg-slate-100 dark:bg-darkbg;
+    }
+}
