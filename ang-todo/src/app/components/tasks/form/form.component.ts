@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
+  addTodo() {
+    
+  }
+
   constructor() { }
 
   ngOnInit(): void {
