@@ -1,5 +1,11 @@
 <header class="flex flex-row p-3">
-  <div class="flex-1"></div>
-  <h1 class="flex-1 text-center">Angtodo</h1>
-  <button class="flex-1 text-right">Dark Mode</button>
+  <div class="w-[33%]">
+    <img class="h-12 w-12" src="./assets/images/logo.webp" alt="logo" />
+  </div>
+  <div class="w-[33%]">
+    <h1 class="text-center">AngTodo</h1>
+  </div>
+  <div class="w-[33%] text-right">
+    <button (click)="toggleMode()">{{ toggletext }}</button>
+  </div>
 </header>

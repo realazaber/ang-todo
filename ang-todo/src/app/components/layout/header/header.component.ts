@@ -5,11 +5,32 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
+
+
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  toggletext: string = "Dark Mode";
+  darkMode: boolean = false;
+
+  toggleMode() {
+    this.darkMode = !this.darkMode;
+
+    if (this.darkMode) {
+      this.toggletext = "Dark Mode";
+    }
+    else {
+      this.toggletext = "Light Mode";
+    }
+
+    alert("Toggle mode\n" + this.darkMode + "\n" + this.toggletext);
+  }
+
+  constructor() { 
+    
+  }
 
   ngOnInit(): void {
+    this.darkMode = false;
   }
 
 }
