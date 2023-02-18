@@ -9,16 +9,19 @@
         @apply duration-300;
     }
 
-    h1, h2, h3, h4, h5, h6, p, button, div {
+    h1, h2, h3, h4, h5, h6, p, div {
         @apply font-sans font-medium text-slate-900 dark:text-slate-100;
     }
-
 
     body {
         @apply bg-slate-100 dark:bg-darkbg;
     }
 
     input, textarea {
-        @apply text-black dark:text-slate-100 dark:border dark:border-white dark:rounded;
+        @apply text-black bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100;
+    }
+
+    .completedLine {
+        @apply line-through;
     }
 }
